@@ -1,4 +1,4 @@
 # SRR-MAXL
 
 Code and data release for "Learning to Recover Spectral Reflectance from RGB Images"
-### Coming soon
+### The code and data will be released when the paper is published
