@@ -20,17 +20,20 @@ The datasets utilized in our paper can be downloaded via the links below:
 run ```python crop_patches.py``` before the training to generate the training patches.
 
 pre-training: ```python train.py --num_images number_of_illuminations --dataset_path your_data_path --output_dir your_checkpoint_path --result_dir your_result_path```
+
 meta_training: ```python meta_train.py --num_images number_of_illuminations --dataset_path your_data_path --output_dir your_checkpoint_path --result_dir your_result_path --resume your_pretrained_checkpoint_path```
 
 
 ## Testing on synthetic data
 
 pre-trained model: ``` python train.py --num_images number_of_illuminations --dataset_path your_data_path --output_dir your_checkpoint_path --result_dir your_result_path --resume your_pretrained_checkpoint_path --eval```
+
 meta-trained model: ```python meta_train.py --num_images number_of_illuminations --dataset_path your_data_path --output_dir your_checkpoint_path --result_dir your_result_path --resume your_metatrained_checkpoint_path --eval```
 
 ## Testing on real data
 
 pre-trained model: ``` python real_testing_nometa.py --num_images number_of_illuminations --dataset_path your_data_path --output_dir your_checkpoint_path --result_dir your_result_path --resume your_pretrained_checkpoint_path --eval```
+
 meta-trained model: ``` python real_testing_meta.py --num_images number_of_illuminations --dataset_path your_data_path --output_dir your_checkpoint_path --result_dir your_result_path --resume your_metatrained_checkpoint_path --eval```
 
 ## Citation
