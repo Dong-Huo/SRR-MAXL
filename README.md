@@ -7,6 +7,14 @@ Code for this paper [Learning to Recover Spectral Reflectance from RGB Images](h
 
 This paper tackles spectral reflectance recovery (SRR) from RGB images. Since capturing ground-truth spectral reflectance and camera spectral sensitivity are challenging and costly, most existing approaches are trained on synthetic images and utilize the same parameters for all unseen testing images, which are suboptimal especially when the trained models are tested on real images because they never exploit the internal information of the testing images. To address this issue, we adopt a self-supervised meta-auxiliary learning (MAXL) strategy that fine-tunes the well-trained network parameters with each testing image to combine external with internal information. To the best of our knowledge, this is the first work that successfully adapts the MAXL strategy to this problem. Instead of relying on naive end-to-end training, we also propose a novel architecture that integrates the physical relationship between the spectral reflectance and the corresponding RGB images into the network based on our mathematical analysis. Besides, since the spectral reflectance of a scene is independent to its illumination while the corresponding RGB images are not, we recover the spectral reflectance of a scene from its RGB images captured under multiple illuminations to further reduce the unknown. Qualitative and quantitative evaluations demonstrate the effectiveness of our proposed network and of the MAXL.
 
+## Architecture
+
+Our architecture follows the standard encoder-decoder framework with skip-connections with an extra encoder for CSS estimation. An auxiliary task is adopted for test-time adaptation.
+
+<p align="center">
+  <img width="800" src="./images/architecture.jpg">
+</p>
+
 ## Datasets
 
 The datasets utilized in our paper can be downloaded via the links below:
