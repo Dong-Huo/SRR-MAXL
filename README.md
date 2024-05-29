@@ -50,11 +50,12 @@ meta-trained model: ``` python real_testing_meta.py --num_images number_of_illum
 If you use this code and data for your research, please cite our paper.
 
 ```
-@article{huo2023learning,
+@article{huo2024learning,
   title={Learning to Recover Spectral Reflectance from RGB Images},
   author={Huo, Dong and Wang, Jian and Qian, Yiming and Yang, Yee-Hong},
-  journal={arXiv preprint arXiv:2304.02162},
-  year={2023}
+  journal={IEEE Transactions on Image Processing},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 
